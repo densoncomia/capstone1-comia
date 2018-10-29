@@ -1,0 +1,179 @@
+/*html, body {
+      margin: 0;
+      padding: 0;
+}*/
+ 
+body {
+      font-family: "Helvetica Neue",sans-serif;
+      margin: 0;
+      padding: 0;
+}
+ 
+header {
+      width: 100%;
+      height: 100vh;
+      background: url(../images/wallpaper.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 10px 10px;
+      font-family: "Helvetica Neue",sans-serif;
+}
+ 
+
+nav ul li:hover {
+      background-color: #f39d1a; 
+}
+ 
+ #drop {
+      z-index: 999 !important;
+      height: 100%;
+}
+
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+}
+ 
+
+
+ul > li:hover > a > span {
+      opacity: 0;
+}
+ 
+@media(max-width: 786px) {
+ 
+
+
+ 
+/*ABOUT ME */
+
+
+    
+}
+
+footer {
+      text-align: center;
+      background-color: #000909;
+      color: white;
+}
+
+.card {
+      text-align: center;
+      border: none;
+
+}
+
+.jumbotron {
+      text-align: center;
+}
+
+.wrapper {
+      font-family: 'Unkempt', cursive;
+}
+
+
+/*HOME */
+
+
+
+.container {
+      background-color: #000;
+}
+.page {
+      background-color: #000;
+}
+
+.container h3 {
+      margin: 0;
+      background-color: #c1b62a;
+      color: black;
+}
+
+/*glitch effect*/
+
+.glitch {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url(../images/3.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.glitch:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../images/knockknock.png) no-repeat 50% 50%;
+
+      background-size: cover;
+      opacity: 0.5;
+     
+
+}
+
+.glitch:hover:before {
+      animation: animate .5s infinite;
+}
+
+@keyframes animate {
+      0% {
+            background-position: 0 0;
+            filter: hue-rotate(0deg);
+      }
+      10% {
+            background-position: 4px 0;
+      }
+      20% {
+            background-position: -4px 0;
+      }
+      30% {
+            background-position: 12px 0;
+      }
+      40% {
+            background-position: -16px 0;
+      }
+      50% {
+            background-position: -24px 0;
+      }
+      60% {
+            background-position: -52px 0;
+      }
+      70% {
+            background-position: 0 22px;
+      }
+      80% {
+            background-position: -40px -10px;
+      }
+      100% {
+            background-position: 0 0;
+            filter: hue-rotate(360deg);
+      }
+}
+
+
+  #hover1:hover {
+      -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+  }
+
+
+
+#hover{
+      -webkit-filter: blur(3px);
+      filter: blur(3px);
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+}
+#hover:hover{
+      -webkit-filter: blur(0);
+      filter: blur(0);
+}
